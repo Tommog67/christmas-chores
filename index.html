@@ -7,7 +7,7 @@
 :root{--bg:#2a1a12;--wood:#c48a4c;--edge:#5a3418;--cream:#f5e3b3;--ink:#4a2a12;--red:#b8352e;--green:#3f7a3a;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *{box-sizing:border-box}
-html,body{margin:0;background:var(--bg);color:var(--ink);font-family:'Press Start 2P',ui-monospace,Menlo,monospace;font-size:9px;line-height:1.6}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:'Press Start 2P',ui-monospace,Menlo,monospace;font-size:9px;line-height:1.6;-webkit-user-select:none;user-select:none}
 body{display:flex;justify-content:center;padding:8px}
 #app{width:100%;max-width:520px}
 .panel{background:var(--cream);border:4px solid var(--edge);outline:3px solid var(--wood);box-shadow:0 4px 0 #3a200e;padding:8px}
@@ -47,7 +47,7 @@ li.d{text-decoration:line-through;opacity:.55}
 <div id="wrap"><canvas id="c" width="240" height="160"></canvas>
 <div id="ov"><div class="panel"><h1 id="ot"></h1><p id="om"></p><button id="rs">Play again</button></div></div></div>
 <div class="panel"><b>Today's to-do (8 friends arrive at 4 PM)</b><ul id="tl"></ul>
-<p class="hint">Move: arrows / WASD. Hold E or Space to work. Walk up to your mates to hear what they say. Press M for music.</p></div>
+</div>
 <div id="sel"><div class="panel"><h1>Who are you?</h1><p>Pick your character. The other friends will be hanging around the house.</p><div id="cards"></div></div></div>
 <div id="pad"><div class="dp">
 <span></span><button data-k="u">▲</button><span></span>
